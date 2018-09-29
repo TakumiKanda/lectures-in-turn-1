@@ -1,0 +1,38 @@
+/* Common style for slides
+ *
+ * Use this stylesheet in other stylesheets, e.g. for different media.
+ * Add this line:
+ *
+ *   @import url(slide-common.css);
+ *
+ * Created by Martin Durst 2005/05/01
+ */
+
+pre, tt, code { 
+  color: #081; /* #4a5 */
+  font-weight: bold;
+  font-family: "Courier New", courier, monospace;
+}
+
+pre.wrong, .wrong, code.wrong, .wrong {
+  color: #f00;
+}
+
+.comment { /* for author/speaker only (but contained in source) */
+  display: none;
+}
+
+.note { /* for audience, but not on slides */
+  color: gray;
+}
+
+pre var, code var, var code {
+  font-style: italic; color: #b60;
+}
+
+img {
+  border-width: 0pt;
+}
+
+.reveal { color: white; background-color: white; }
+.reveal:hover { color: darkgreen; background-color: white; }

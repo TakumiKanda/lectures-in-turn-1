@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>XML と JSON</title>
+		<link href="common.css" rel="stylesheet" type="text/css" />
+		<link href="slide-screen.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="slide-proj.css" rel="stylesheet" type="text/css" media="projection" />
+		<link href="slide-print.css" rel="stylesheet" type="text/css" media="print" />
+	</head>
+	
+	<body>
+		<div class="head">
+			<h1 class="title"><strong>2018年後期輪講発表</strong></h1>
+			<h2>2018年10月3日</h2>
+			<h2>XML と JSON</h2>
+			<h3>神田拓実</h3>
+		</div>
+		
+		<h1 class="subhead">概要</h1>
+		<ul>
+			<li>XML
+				<ul>
+					<li>XML とは？</li>
+					<li>XML の構文</li>
+					<li>XML の歴史</li>
+				</ul>
+			</li>
+			<li>JSON
+				<ul>
+					<li>JSON とは？</li>
+					<li>JSON の構文</li>
+					<li>JSON の歴史</li>
+				</ul>
+			</li>
+			<li>XML と JSON の違い</li>
+			<li>まとめ</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">XML とは？</h1>
+		<ul>
+			<li>Extensible Markup Language の略</li>
+			<li>文章マークアップ言語かつデータ交換フォーマット</li>
+			<li>SGML のサブセット</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">XML の構文</h1>
+		<pre>
+			<code>
+  &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+  &lt;foods&gt;
+    &lt;food&gt;
+      &lt;name&gt;バナナ&lt;/name&gt;
+      &lt;color&gt;黄色&lt;/color&gt;
+    &lt;/food&gt;
+	
+    &lt;food&gt;
+      &lt;name&gt;リンゴ&lt;/name&gt;
+      &lt;color&gt;赤&lt;/color&gt;
+    &lt;/food&gt;
+  &lt;/foods&gt;
+			</code>
+		</pre>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">SGML とは？</h1>
+		<ul>
+			<li>Standard Generalized Markup Language の略</li>
+			<li>言語を作る言語</li>
+			<li>テキストに付加情報を記述できるマークアップ言語</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">XML の歴史</h1>
+		<ul class="timeline">
+			<li>
+				<p class="timeline-date">1996年7月</p>
+				<div class="timeline-content">
+					<h3>W3C がチームを発足</h3>
+				</div>
+			</li>
+			<li>
+				<p class="timeline-date">1996年11月</p>
+				<div class="timeline-content">
+					<h3>W3C ドラフトの発表</h3>
+				</div>
+			</li>
+			<li>
+				<p class="timeline-date">1998年2月</p>
+				<div class="timeline-content">
+					<h3>XML1.0 の勧告</h3>
+				</div>
+			</li>
+			<li>
+				<p class="timeline-date">2004年2月</p>
+				<div class="timeline-content">
+					<h3>XML1.1 の勧告</h3>
+				</div>
+			</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">XML の設計目標</h1>
+		<ol>
+			<li>インターネット上で利用可能であること</li>
+			<li>様々なアプリケーションをサポートすること</li>
+			<li>SGML と互換性があること</li>
+			<li>XML 文書を処理するプログラムが簡単に書けること</li>
+			<li>オプションは必要最低限であること</li>
+			<li>文書は人が読みやすく、合理的であること</li>
+			<li>設計する準備が簡単にできること</li>
+			<li>設計が簡潔であること</li>
+			<li>文書が簡単に作成できること</li>
+			<li>XML マークアップの使いやすさはあまり重要でないこと</li>
+		</ol>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">XML の現状</h1>
+		<ul>
+			<li>XML2.0 は議論は行われたが未勧告</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">JSON とは？</h1>
+		<ul>
+			<li>JavaScript Object Notation の略</li>
+			<li>データ交換フォーマット</li>
+			<li>JavaScript オブジェクト表記構文のサブセット</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">JSON の構文</h1>
+		<pre>
+			<code>
+  {
+      "メンバー表":[
+          {
+              "氏名":"田中太郎",
+              "年齢":18
+          },
+          {
+              "氏名":"山田花子"
+              "年齢":19
+          }
+      ]   
+  }
+			</code>
+		</pre>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">XML と JSON の違い</h1>
+		<ul>
+			<li>文書マークアップ言語であるかの違い</li>
+			<li>ネームスペースがあるかないかの違い</li>
+			<li>オブジェクトモデルに直接マップできるかの違い</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">JSON の歴史</h1>
+		<ul class="timeline">
+			<li>
+				<p class="timeline-date">2002年</p>
+				<div class="timeline-content">
+					<h3>json.org で仕様が公開</h3>
+				</div>
+			</li>
+			<li>
+				<p class="timeline-date">2006年</p>
+				<div class="timeline-content">
+					<h3>RFC4627 が公開</h3>
+				</div>
+			</li>
+			<li>
+				<p class="timeline-date">2013年</p>
+				<div class="timeline-content">
+					<h3>ECMA-404 の発表</h3>
+				</div>
+			</li>
+			<li>
+				<p class="timeline-date">2014年</p>
+				<div class="timeline-content">
+					<h3>RFC7159 が公開、同時に RFC4627 の廃止</h3>
+				</div>
+			</li>
+			<li>
+				<p class="timeline-date">2017年</p>
+				<div class="timeline-content">
+					<h3>RFC8259 と ECMA-404 の発表</h3>
+				</div>
+			</li>
+		</ul>
+		<p class="slidesonly" />
+		
+		<h1 class="subhead">まとめ</h1>
+		<ul>
+			<li>XML は SGML のサブセットであり JSON は JavaScript のサブセット</li>
+			<li>XML の文書マークアップ言語としての側面</li>
+			<li>JSON はオブジェクトモデルに直接マップ可能</li>
+		</ul>
+		<p class="slidesonly" />
+	</body>
+</html>
